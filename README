@@ -1,0 +1,20 @@
+Backend Status
+
+This is a small project for showing the status of your Apache backends, as
+reported by a group of Perlbals on the frontend.  This is not finished and
+doesn't have a reporting/frontend on it yet.
+
+The idea, though, is to use a small Perlbal plugin that sends UDP packets
+to the backend-status-server (written in Go).  This server collates the
+information and presents it in a JSON format that you can consume with
+whatever consumer you want.
+
+This is mostly a demo for now.  Installing it is left as an exercise to the
+reader.  You basically just have to copy the plugin to your Perlbal::Plugin
+directory, add it to your config file, and write a frontend.
+
+A demo/short frontend is included in the test-frontend.pl script.
+
+
+-Mark Smith
+mark@qq.is
